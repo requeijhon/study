@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Limp Bizkit </title>
+
+</head>
+
+<body bgcolor="6A5ACD">
+
+    <h1> <center> Limp Bizkit </center> </h1>    
+
+    <hr width="100%" align="left" size="2" color="black" noshade>
+
+    <div style="text-align: center; margin-top: 35px; margin-bottom: 15px" >
+        <b>Limp Bizkit se divertindo:</b>
+      </div>
+    <center>
+    <img src="https://media.tenor.com/LcOw_Bz__d0AAAAC/happy-live-performance.gif">
+    </center>
+    <br>    
+
+    <h1 style="text-align: center;"> Biografia </h1>
+
+    <hr width="100%" align="left" size="2" color="black" noshade>
+
+    <font size="4" face="Arial">
+    <p> 
+       
+        O Limp Bizkit é uma banda de rock alternativo formada em 1994 na Flórida, EUA. Liderada pelo vocalista Fred 
+        Durst, a banda ganhou destaque no final dos anos 90 com seu álbum de estreia, "Three Dollar Bill, Y'all$". O som do Limp 
+        Bizkit combina elementos de rock, rap e nu metal, e eles são conhecidos por suas performances enérgicas ao vivo.
+        <br>
+        O álbum "Significant Other" (1999) impulsionou ainda mais a popularidade da banda, apresentando hits como "Nookie" e 
+        "Break Stuff". Em 2000, lançaram "Chocolate Starfish and the Hot Dog Flavored Water", que incluiu sucessos como 
+        "Rollin'" e "My Generation".
+        <br>
+        No entanto, ao longo dos anos, o Limp Bizkit enfrentou mudanças na formação e críticas mistas. A banda passou por 
+        períodos de hiato, mas continua a se apresentar e lançar música. Apesar das controvérsias, o Limp Bizkit deixou uma 
+        marca duradoura na cena musical dos anos 90 e 2000.
+        <br>
+    </p>
+    </font>
+
+
+    <h1 style="text-align: center;"> Integrantes </h1>
+
+    <hr width="100%" align="left" size="2" color="black" noshade>
+    <br>
+
+    <font size="4" face="Arial">
+    <p> 
+        Limp Bizkit passou por muitas mudanças de membros após seus anos de maior sucesso (1997-2001). Selecione opções a seguir
+        para conhecer os integrantes originais da banda.
+    </p>
+    
+    <br>
+
+    <font size="4" face="Arial">
+    <Form>
+        <label for="escolha">Escolha uma opção:</label>
+        <SELECT id="escolha" onchange="mostrarConteudoSelecionado()">
+
+            <option value="pr">Selecione o integrante da banda.</option>
+            <option value="fd">Fred Durst</option>
+            <option value="wb">Wes Borderland</option>
+            <option value="sr">Sam Rivers</option>
+            <option value="jo">John Otto</option>  
+            <option value="dl">Dj Lethal</option>
+        </SELECT>
+        <br><br>
+        
+    </Form>
+
+    <div id="conteudo">
+        
+    </div>
+
+    <script>
+
+         function mostrarConteudoSelecionado() {
+    
+            var select = document.getElementById("escolha");
+            var escolha = select.options[select.selectedIndex].value;
+            var conteudoDiv = document.getElementById("conteudo");
+
+            if(escolha === "fd"){
+                conteudoDiv.innerHTML =  
+                "<br><img src='https://media.tenor.com/Xz3znvRVlcEAAAAd/fred-durst-limp-bizkit.gif'>"; 
+            } else if (escolha === "wb") {
+                conteudoDiv.innerHTML = 
+                "<br><img src='https://media.tenor.com/fbM0u3ZApY8AAAAM/numetal-wes.gif' width='498' height='342'>";
+            } else if (escolha === "sr") {
+                conteudoDiv.innerHTML = 
+                "<br><img src='https://media.tenor.com/jPeTSXafzNQAAAAC/limp-bizkit-numetal.gif' width='498' height='342'>";
+            } else if (escolha === "jo") {
+                conteudoDiv.innerHTML = 
+                "<br><img src='https://media.tenor.com/j7UFThGmPE4AAAAd/limp-bizkit-nu-metal.gif' width='498' height='342'>";
+            } else if (escolha === "dl") {
+                conteudoDiv.innerHTML = 
+                "<br><img src='https://media.tenor.com/5wmojE_dYQMAAAAC/limp-bizkit-poop.gif' width='498' height='342'>";
+            } else {
+                conteudoDiv.innerHTML = "";
+            }
+        }       
+    
+    </script>
+    
+
+    <table border="3" widht="80%" height="100%" align="center"
+        bordercolor="black" bgcolor="#836FFF" cellspacing="50" cellpadding="50" >
+
+        <TR>
+            <TD colspan=3 align="center" align="'right">Links</TD>
+        </TR>
+
+        <TR>
+            <TD align="center"><a href="principal.html">Página Principal </a></TD>
+            <TD align="center"><a href="w99.html">Woodstock 1999</a></TD>
+            <TD align="center"><a href="albuns.html"> Álbuns</a></TD>
+        </TR> 
+    </font>    
+</body>
+
+</html>
+
